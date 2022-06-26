@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temprature converter</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="temprature">
+        <label for="">Input temprature</label>
+        <input style="height:40px; border-radius:50px ;font-weight: bold; -moz-appearance: textfield;" type="number"
+         name="temp" 
+         id="inputTemp" 
+         placeholder="Input temp.."/>
+         <label for="">Converted To</label>
+        <div class="checkBox">
+          <label for="">Celcius</label>
+          <input type="checkbox" name="celcius" id="cel" onclick="checkedCel()" />
+          <label for="">Farenheight</label>
+          <input type="checkbox" name="Farenheight" id="far" onclick="checkedFar()"/>
+        </div>
+        <!-- <button type="submit" onclick="tempConvertor()" id="convert">Convert</button> -->
+        <button class="btn2" onclick="clearForm()" id="reset">Reset</button>
+      </div>
+      <div class="result">
+        <input type="text" name="" id="convertedTemp" />
+      </div>
+      
+    </div>
+
+  </body>
+</html>
